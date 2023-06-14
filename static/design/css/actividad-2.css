@@ -1,0 +1,103 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.unit-container {
+    background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+    border-radius: 0.5rem;
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    width: 62.125rem;
+}
+
+.unit-title {
+    font-size: 1.5rem;
+    color: #555;
+}
+
+.unit-description {
+    font-size: 1.1rem;
+    color: #777;
+    margin-top: 1rem;
+}
+
+.element {
+    margin-top: 1.5rem;
+}
+
+.element-description {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.element-code {
+    font-size: 1.2rem;
+    color: #333;
+    background-color: #f9f9f9;
+    border-radius: 0.3rem;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.return-button {
+    font-size: 1.2rem;
+    background-color: #333;
+    border: none;
+    border-radius: 0.3rem;
+    padding: 0.8rem 1.5rem;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Estilos responsivos */
+@media (max-width: 1031px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .unit-container {
+        padding: 1rem;
+        width: 35rem;
+    }
+
+    .unit-title {
+        font-size: 1.3rem;
+    }
+
+    .unit-description {
+        font-size: 1rem;
+    }
+
+    .element-description {
+        font-size: 1rem;
+    }
+
+    .element-code {
+        font-size: 1.1rem;
+    }
+}

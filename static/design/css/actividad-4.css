@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(140deg, #FA8BFF 0%, #44ff2b 52%, #fff82b 10%);
+    font-family: Arial, sans-serif;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #777;
+}
+
+.link-repositorio {
+    margin-top: 2rem;
+}
+
+.item {
+    font-size: 1.2rem;
+}
+
+.item a {
+    text-decoration: none;
+    color: #333;
+}
+
+.actividad {
+    margin-top: 2rem;
+}
+
+.item-link {
+    font-size: 1.2rem;
+    color: #333;
+    text-decoration: none;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+    transition: background-color 0.3s ease;
+}
+
+.item-link:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+h1, p {
+    animation: slideIn 1s ease-in-out;
+}
+
+

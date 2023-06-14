@@ -1,0 +1,103 @@
+/* Estilos generales.*/
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.contenedor-actividades {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    animation: animacion-degradado 10s ease infinite;
+    background-size: 200% 200%;      
+}
+
+.actividad {
+    flex: 1 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 0 3.125rem;
+    width: 6.25rem;
+    height: 10.25rem;
+    border-radius: 0.9rem;
+    box-shadow: 0rem 0.1rem 0.5rem rgba(0, 0, 0, 0.9);
+    background-color: #FBDA61;
+    background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
+
+}
+
+.item-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+    text-shadow: 0rem 0.1rem 0.5rem rgba(0, 0, 0, 0.9);
+}
+
+/* Estilos pseudo-clases. */
+.actividad:hover {
+    transform: scale(1.1);
+    background: #FBDA61;
+}
+
+@keyframes animacion-degradado {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Estilos responsivos en max-width: 1000px. */
+@media (max-width: 1000px) {
+    .contenedor-actividades {
+        padding: 0.01rem;
+    }
+    
+    .actividad {
+        margin: 2rem;
+    }
+}
+
+/* Estilos responsivos en max-width: 855px.*/
+@media (max-width: 855px) {
+    .actividad {
+        margin: 1rem;
+        width: 8rem;
+        height: 12rem;
+    }
+    
+    .item-link {
+        font-size: 1.5rem;
+    }
+}
+
+/* Estilos responsivos en max-width: 640px.*/
+@media (max-width: 640px) {
+    .contenedor-actividades {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .actividad {
+        margin: 1rem;
+        width: 12rem;
+        height: 16rem;
+    }
+    
+    .item-link {
+        font-size: 1.2rem;
+    }
+}
